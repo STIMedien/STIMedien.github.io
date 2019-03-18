@@ -1,0 +1,67 @@
+/*!
+ * Created by: Valentin Sickert
+ * File create: 18.03.19
+ * Project: STIMedien.github.io
+ */
+
+a {
+  color: #FFBF00;
+
+  &:hover {
+    color: #FFBF00;
+    text-decoration: underline;
+  }
+}
+
+.bg-sti {
+  background-color: #12233f;
+}
+
+.nav-item {
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  &:not(.active) {
+    font-weight: bold;
+  }
+
+  &.active {
+    background-color: rgba(255, 255, 255, .1);
+
+    .nav-link {
+      background: none;
+    }
+  }
+}
+
+.sti-h1-bg {
+  display: inline-block;
+  color: #212121;
+  background-color: #FFFFFF !important;
+  padding: 0.3rem 0.6rem;
+  transform: skew(-3deg);
+  .h1-sti {
+    transform: skew(3deg);
+    font-weight: bold;
+  }
+}
+
+.sti-h1-bg + h3 {
+  display: inline-block;
+  margin-left: 0.3rem;
+}
+
+ul.list-dash {
+  list-style-type: none;
+  li {
+    &:before {
+      content: '\2014';
+      position: absolute;
+      margin-left: -20px;
+    }
+    h5 {
+      font-weight: bold;
+    }
+  }
+}
+
